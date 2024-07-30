@@ -1,0 +1,101 @@
+.offCanvasWrapper {
+    position: fixed;
+    inset: 0;
+    background: #f0f0f0;
+    height: 100vh;
+    width: 25%;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 53;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.offCanvasWrapper.show {
+    transform: translateX(0);
+}
+
+.offCanvasContent {
+    height: 100%;
+    width: 100%;
+    max-width: 24rem;
+    background: white;
+    padding: 1.5rem;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    font-size: 1.75rem;
+    cursor: pointer;
+    color: #41434c;
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.closeButton:hover {
+    color: #ff6347;
+}
+
+.offCanvasHeader {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.offCanvasNav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.navItem {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+    color: #2f2f2f;
+    font-weight: medium;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+}
+
+.navItem:hover {
+    background-color: #e0e0e0;
+    color: #ff6347;
+}
+
+.navItem:last-child {
+    border-bottom: none;
+}
+
+.offCanvasFooter {
+    padding-top: 1.5rem;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    color: #959fba;
+    border-top: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.footerText img {
+    vertical-align: middle;
+    margin-left: 0.25rem;
+}
+
+@media screen and (max-width: 760px) {
+    .offCanvasWrapper {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .offCanvasWrapper {
+        width: 100%;
+    }
+}

@@ -1,0 +1,129 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cardItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 300px; 
+  margin: 0;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #f8ffae, #43c6ac);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.cardItem:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.cardImage:hover {
+  transform: scale(1.05);
+}
+
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 15px;
+}
+
+.cardTitle {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cardDescription {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.cardPlayButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cardPlayButton:hover {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  transform: scale(1.1);
+}
+
+.cardPlayIcon {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+@media (max-width: 768px) {
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .cardDescription {
+    font-size: 12px;
+  }
+
+  .cardPlayButton {
+    width: 45px;
+    height: 45px;
+  }
+
+  .cardPlayIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardTitle {
+    font-size: 16px;
+  }
+
+  .cardDescription {
+    font-size: 10px;
+  }
+
+  .cardPlayButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cardPlayIcon {
+    width: 18px;
+    height: 18px;
+  }
+}
