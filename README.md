@@ -46,11 +46,11 @@ For server-side rendering and enhancing performance.
 The project is live at [KukuFM Assignment](https://kuku-fm-assignment-lac.vercel.app/).
 
 
-## Deployment
+
+## Deployment Platform Used
 
 The project is deployed live on:
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-[Hosted Link]([https://your-vercel-deployment-link](https://kuku-fm-assignment-lac.vercel.app/))
 
 
 ## API Reference
